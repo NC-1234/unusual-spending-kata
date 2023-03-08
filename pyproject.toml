@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "unusual-spending-kata"
+version = "0.1.0"
+description = ""
+authors = ["NC-1234 <nick.choudhry@codurance.com>"]
+readme = "README.md"
+packages = [{include = "unusual_spending_kata"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pytest = "^7.2.1"
+pytest-mock = "^3.10.0"
+injector = "^0.20.1"
+lagom = "^2.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
