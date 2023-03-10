@@ -1,9 +1,10 @@
 from abc import abstractmethod
+from typing import Protocol
 
 from src.domain.payment import Category
 
 
-class EmailOutputBoundary:
+class EmailOutputBoundary(Protocol):
     @abstractmethod
     def compose_email(self, overspent_categories: dict[Category, float]) -> str:
         pass

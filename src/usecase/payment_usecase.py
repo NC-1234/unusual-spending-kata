@@ -5,7 +5,7 @@ from src.domain.credit_history import MonthlyExpenditure
 from src.domain.month_status import MonthStatus
 from src.domain.payment import Category, Payment
 from src.interfaces.presenters.email_service import EmailOutputBoundary
-from src.repository.credit_repository import Repository
+from src.credit_repository.credit_repository import Repository
 
 @runtime_checkable
 class PaymentInputBoundary(Protocol):

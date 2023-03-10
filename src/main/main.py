@@ -3,7 +3,7 @@ from lagom import Container
 from src.domain.month_status import MonthStatus
 from src.domain.payment import Payment, Category
 from src.interfaces.presenters.email_service import EmailOutputBoundary, EmailPresenter
-from src.repository.credit_repository import CreditRepository, Repository
+from src.credit_repository.credit_repository import CreditRepository, Repository
 from src.usecase.payment_usecase import PaymentInputBoundary, PaymentUsecase
 
 

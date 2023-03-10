@@ -2,7 +2,7 @@ from src.domain.credit_history import MonthlyExpenditure
 from src.domain.month_status import MonthStatus
 from src.domain.payment import Category, Payment
 from src.interfaces.presenters.email_service import EmailPresenter
-from src.repository.credit_repository import CreditRepository
+from src.credit_repository.credit_repository import CreditRepository
 from src.usecase.payment_usecase import PaymentUsecase
 
 USER_ID = "test-user-id"
@@ -58,7 +58,5 @@ def test_compose_an_e_mail_message_to_the_user_that_lists_the_categories_for_whi
     assert type(previous_monthly_spending) is MonthlyExpenditure
     assert type(overspent_categories) is dict
     assert result == EMAIL
-
-#     IN THE MAIN BRING IN INJECTOR TO RUN THE APP
 
 
